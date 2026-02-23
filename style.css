@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(246, 249, 250);
+    font-family: sans-serif;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    min-width: 1000px;
+    max-height: 600px;
+     padding: 0 5%;
+     margin: 30px auto;
+     border-radius: 15px;
+     box-shadow: 0 10px 10px #ede4e4;
+     background-color: #fff;
+     overflow: hidden;
+}
+
+.main-container .gauche {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.main-container .gauche img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main-container .gauche h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+
+}
+
+.main-container .gauche p {
+    font-size: 1.2em;
+    padding: 8px 30px;
+}
+
+.droite {
+    min-height: 300px;
+    display: flex;
+    border: 2px solid #a59d9d;
+    padding: 30px;
+    border-radius: 12px;
+    
+}
+
+.droite form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.droite form .champ label{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.droite form .champ input {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 2px solid #ede4e4;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.droite form .champ input:focus {
+    border-color: blue;
+}
+
+
+.droite form select {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 2px solid #ede4e4;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.droite form select:focus {
+     border-color: blue
+}
+
+ input[type="submit"] {
+    padding: 8px 30px;
+    border: none;
+    font-size: 1.2em;
+    background-color: rgb(97, 162, 253);
+    border-radius: 5px;
+ 
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+    }
+
+    .main-container .gauche, .droite {
+        width: 100%;
+    }
+}

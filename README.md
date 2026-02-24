@@ -6,6 +6,5 @@ Interface Moderne:
   - Image de profil circulaire avec gestion du ratio (`object-fit`).
   - Effets visuels d'ombres portées (`box-shadow`) pour un aspect "carte".
   - États d'interaction (:focus) sur les champs de saisie et les boutons.
-
-
+voir 👉(https://slamiath.github.io/responsive-user-profile/)
     
